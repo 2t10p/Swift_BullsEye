@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func sliderMoves(slider: UISlider) {
+        print("The value of the slider is now: \(slider.value)")
+    }
     
 }
 
