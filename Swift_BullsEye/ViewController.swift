@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     }
     
-    @IBAction func sliderMoves(slider: UISlider) {
+    @IBAction func sliderMoved(slider: UISlider) {
         print("The value of the slider is now: \(slider.value)")
     }
     
