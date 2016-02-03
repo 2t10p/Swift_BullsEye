@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlert() {
-        let alert = UIAlertController(title: "Hello World"
-                                    , message: "This is BullsEye app"
-                                    , preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Hello World",
+            message: "This is BullsEye app",
+            preferredStyle: .Alert)
 
-        let action = UIAlertAction(   title: "Awesome"
-                                    , style: .Default
-                                    , handler: nil)
+        let action = UIAlertAction(title: "Awesome",
+            style: .Default,
+            handler: nil)
         
         alert.addAction(action)
         
