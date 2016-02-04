@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var slider: UISlider!
     
+    @IBOutlet weak var targetLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewRound()
+        updateLabels()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,6 +33,10 @@ class ViewController: UIViewController {
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 50
         slider.value = Float(currentValue)
+    }
+    
+    func updateLabels() {
+        targetLable.text = String(targetValue)
     }
     
     @IBAction func showAlert() {
@@ -50,6 +57,8 @@ class ViewController: UIViewController {
         presentViewController(alert, animated: true, completion: nil)
 
         startNewRound()
+        updateLabels()
+
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
