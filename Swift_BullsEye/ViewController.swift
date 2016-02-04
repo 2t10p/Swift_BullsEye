@@ -9,11 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var currentValue: Int = 50
+    
+    var currentValue: Int = 0
+    
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentValue = lroundf(slider.value)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,7 +24,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func showAlert() {
         let message = "The value of the slider is : \(currentValue)"
         
