@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var currentValue: Int = 0
     var targetValue: Int = 0
+    var score = 0
     
     @IBOutlet weak var slider: UISlider!
     
@@ -56,6 +57,8 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "OK",
             style: .Default,
             handler: nil)
+        
+        score += points
         
         alert.addAction(action)
         
