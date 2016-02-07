@@ -48,18 +48,15 @@ class ViewController: UIViewController {
     @IBAction func showAlert() {
 
         let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
-        score += points
+        var points = 100 - difference
         
-        let message = "Your score is \(points) points\n"
-                    //+ "The value of the slider is : \(currentValue)\n"
-                    //+ "The target value is: \(targetValue)\n"
-                    //+ "The difference is: \(difference)"
-
         let title: String
-        
         if difference == 0 {
             title = "excellent !"
+            points += 100
+        } else if difference == 1 {
+            title = "almost"
+            points += 50
         } else if difference < 5 {
             title = "almost"
         } else if difference < 10 {
@@ -67,6 +64,13 @@ class ViewController: UIViewController {
         } else {
             title = "not even close"
         }
+
+        score += points
+        
+        let message = "Your score is \(points) points\n"
+        //+ "The value of the slider is : \(currentValue)\n"
+        //+ "The target value is: \(targetValue)\n"
+        //+ "The difference is: \(difference)"
         
         let alert = UIAlertController(title: title,
             message: message,
@@ -76,14 +80,12 @@ class ViewController: UIViewController {
             style: .Default,
             handler: nil)
         
-        
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
 
         startNewRound()
         updateLabels()
-        
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
