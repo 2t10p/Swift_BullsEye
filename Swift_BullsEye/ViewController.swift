@@ -78,14 +78,15 @@ class ViewController: UIViewController {
 
         let action = UIAlertAction(title: "OK",
             style: .Default,
-            handler: nil)
+            handler: {action in
+                        self.startNewRound()
+                        self.updateLabels()
+                    })
         
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
-
-        startNewRound()
-        updateLabels()
+        
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
