@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
         updateLabels()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func startNewGame() {
+        score = 0
+        round = 0
+        startNewRound()
     }
     
     func startNewRound() {
@@ -89,6 +95,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func startOver() {
+        startNewGame()
+        updateLabels()
+    }
+
     @IBAction func sliderMoved(slider: UISlider) {
         currentValue = lroundf(slider.value)
     }
