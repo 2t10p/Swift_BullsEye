@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     var currentValue: Int = 0
     var targetValue: Int = 0
     var score = 0
-
+    var round = 0
+    
     @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var targetLable: UILabel!
+    @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var roundLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +33,16 @@ class ViewController: UIViewController {
     }
     
     func startNewRound() {
+        round += 1
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 50
         slider.value = Float(currentValue)
     }
     
     func updateLabels() {
-        targetLable.text = String(targetValue)
+        targetLabel.text = String(targetValue)
         scoreLabel.text = String(score)
+        roundLabel.text = String(round)
     }
     
     @IBAction func showAlert() {
@@ -51,7 +55,7 @@ class ViewController: UIViewController {
                     //+ "The target value is: \(targetValue)\n"
                     //+ "The difference is: \(difference)"
         
-        let alert = UIAlertController(title: "Cool",
+        let alert = UIAlertController(title: "0.0",
             message: message,
             preferredStyle: .Alert)
 
