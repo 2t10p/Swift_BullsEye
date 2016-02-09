@@ -25,24 +25,24 @@ class ViewController: UIViewController {
 
         let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
         slider.setThumbImage(thumbImageNormal, forState: .Normal)
-        
+
         let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")
         slider.setThumbImage(thumbImageHighlighted, forState: .Highlighted)
-        
+
         let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        
+
         if let trackLeftImage = UIImage(named: "SliderTrackLeft") {
             let trackLeftResizeable =
                         trackLeftImage.resizableImageWithCapInsets(insets)
             slider.setMinimumTrackImage(trackLeftResizeable, forState: .Normal)
         }
-        
+
         if let trackRightImage = UIImage(named: "SliderTrackRight") {
             let trackRightResizeable =
                         trackRightImage.resizableImageWithCapInsets(insets)
             slider.setMaximumTrackImage(trackRightResizeable, forState: .Normal)
         }
-        
+
         startNewGame()
         updateLabels()
         // Do any additional setup after loading the view, typically from a nib.
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         round = 0
         startNewRound()
     }
-    
+
     func startNewRound() {
         round += 1
         targetValue = 1 + Int(arc4random_uniform(100))
