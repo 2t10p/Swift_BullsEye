@@ -60,15 +60,15 @@
 		187861431C5932D800DCE196 /* Swift_BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				189E04281C8380EB006D373D /* Default-568h@2x.png */,
-				189E04291C8380EB006D373D /* Default@2x.png */,
 				185A05221C6B23F900258D28 /* BullsEye.html */,
 				187861441C5932D800DCE196 /* AppDelegate.swift */,
 				187861461C5932D800DCE196 /* ViewController.swift */,
 				18C9D71C1C68340900D2A05C /* AboutViewController.swift */,
 				187861481C5932D800DCE196 /* Main.storyboard */,
-				1878614B1C5932D800DCE196 /* Assets.xcassets */,
 				187861501C5932D800DCE196 /* Info.plist */,
+				1878614B1C5932D800DCE196 /* Assets.xcassets */,
+				189E04291C8380EB006D373D /* Default@2x.png */,
+				189E04281C8380EB006D373D /* Default-568h@2x.png */,
 			);
 			path = Swift_BullsEye;
 			sourceTree = "<group>";
