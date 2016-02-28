@@ -105,7 +105,6 @@
 				TargetAttributes = {
 					187861401C5932D800DCE196 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = L64WGFSFEW;
 					};
 				};
 			};
@@ -252,7 +251,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Swift_BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.bun.Swift-BullsEye";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,7 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Swift_BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.bun.Swift-BullsEye";
 				PRODUCT_NAME = "$(TARGET_NAME)";
