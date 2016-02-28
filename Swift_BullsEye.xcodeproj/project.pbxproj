@@ -12,7 +12,8 @@
 		187861451C5932D800DCE196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187861441C5932D800DCE196 /* AppDelegate.swift */; };
 		187861471C5932D800DCE196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187861461C5932D800DCE196 /* ViewController.swift */; };
 		1878614C1C5932D800DCE196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1878614B1C5932D800DCE196 /* Assets.xcassets */; };
-		1878614F1C5932D800DCE196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1878614D1C5932D800DCE196 /* LaunchScreen.storyboard */; };
+		189E042A1C8380EB006D373D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E04281C8380EB006D373D /* Default-568h@2x.png */; };
+		189E042B1C8380EB006D373D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E04291C8380EB006D373D /* Default@2x.png */; };
 		18C9D71D1C68340900D2A05C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C9D71C1C68340900D2A05C /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,9 @@
 		187861461C5932D800DCE196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		187861491C5932D800DCE196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1878614B1C5932D800DCE196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1878614E1C5932D800DCE196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187861501C5932D800DCE196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189E04281C8380EB006D373D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		189E04291C8380EB006D373D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18C9D71C1C68340900D2A05C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,13 +60,14 @@
 		187861431C5932D800DCE196 /* Swift_BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				189E04281C8380EB006D373D /* Default-568h@2x.png */,
+				189E04291C8380EB006D373D /* Default@2x.png */,
 				185A05221C6B23F900258D28 /* BullsEye.html */,
 				187861441C5932D800DCE196 /* AppDelegate.swift */,
 				187861461C5932D800DCE196 /* ViewController.swift */,
 				18C9D71C1C68340900D2A05C /* AboutViewController.swift */,
 				187861481C5932D800DCE196 /* Main.storyboard */,
 				1878614B1C5932D800DCE196 /* Assets.xcassets */,
-				1878614D1C5932D800DCE196 /* LaunchScreen.storyboard */,
 				187861501C5932D800DCE196 /* Info.plist */,
 			);
 			path = Swift_BullsEye;
@@ -130,8 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				182BBD7D1C68B48900FA1209 /* Main.storyboard in Resources */,
+				189E042A1C8380EB006D373D /* Default-568h@2x.png in Resources */,
+				189E042B1C8380EB006D373D /* Default@2x.png in Resources */,
 				185A05231C6B23F900258D28 /* BullsEye.html in Resources */,
-				1878614F1C5932D800DCE196 /* LaunchScreen.storyboard in Resources */,
 				1878614C1C5932D800DCE196 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +162,6 @@
 				187861491C5932D800DCE196 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1878614D1C5932D800DCE196 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1878614E1C5932D800DCE196 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
